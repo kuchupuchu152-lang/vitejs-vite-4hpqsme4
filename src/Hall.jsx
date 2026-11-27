@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
+import PortraitMat from './PortraitMat.jsx'
 
 const SKY = '#f4d9c6'
 const GOLD = '#d4a93a'
@@ -76,7 +77,7 @@ function Gold(props) {
                                                                                                                                                                                                                                                                                         ))}
                                                                                                                                                                                                                                                                                               <mesh rotation-x={Math.PI / 2} position={[0, 10, -5]}>
                                                                                                                                                                                                                                                                                                       <planeGeometry args={[18, 30]} />
-                                                                                                                                                                                                                                                                                                              <meshStandardMaterial color="#f8ecda" />
+                                                                                                                                                                                                                                                                                                              <PortraitMat />
                                                                                                                                                                                                                                                                                                                     </mesh>
                                                                                                                                                                                                                                                                                                                           <mesh position={[0, 6, -14.7]}>
                                                                                                                                                                                                                                                                                                                                   <planeGeometry args={[3.6, 5]} />
